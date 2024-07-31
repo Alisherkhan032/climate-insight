@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #212122;
+            color: white;
+        }
+
+        .container {
+            margin: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        form label {
+            margin-left: 19px;
+            font-size: 35px;
+        }
+
+        .outer {
+            min-width:50vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #edeef0;
+            border-radius: 30px;
+            padding-left: 20px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        .outer input[type="text"] {
+            background-color: transparent;
+            flex: 1;
+            padding: 10px;
+            border: 0;
+            outline: none;
+            font-size: 1.2em;
+        }
+
+        .outer input[type="submit"] {
+            font-size: 1.1em;
+            border-radius: 45px;
+            background-color: aqua;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #empty{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2em;
+            color: cadetblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <label for="city">Enter City Name</label><br>
+            <div class="outer">
+                <input type="text" id="city">
+                <input type="submit" value="Enter">
+            </div>
+
+            <div id="empty"></div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
