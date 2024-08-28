@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
+    <title>Climate Insights</title>
     <link rel="stylesheet" href="style.css">
-</head> 
-
+</head>
 <body>
     <div class="container">
-        <form>
-            <label for="city">Enter City Name</label><br>
-            <div class="outer">
-                <input type="text" id="city">
-                <input type="submit" value="Enter">
-            </div>
-
-            <div id="empty"></div>
-        </form>
+        <div class="form-div">
+            <p>Climate Insights</p>
+            <form>
+                <div class="inside-form-div">
+                    <input type="text" id="input-text">
+                    <input type="submit" value="Enter" id="button">
+                </div>
+            </form>
+            <div class="output-data"></div>
+        </div>
     </div>
-
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
